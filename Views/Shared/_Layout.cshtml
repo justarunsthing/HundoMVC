@@ -7,7 +7,6 @@
     <script type="importmap"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/HundoMVC.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
@@ -48,14 +47,45 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - HundoMVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="footer mt-auto py-3 sticky-footer theme-color">
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-lg-3 gy-2">
+                <div class="col order-last order-lg-first text-light">
+                    <div>
+                        <span class="">&copy;@(DateTime.Now.Year)</span> Arun Pun | justarunsthing@outlook.com
+                    </div>
+                </div>
+                <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
+                    <img src="/img/arunpun-logo.svg" alt="Arun Pun Logo" height="24">
+                </div>
+                <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
+                    <div class="row">
+                        <div class="col social">
+                            <a href="https://github.com/justarunsthing" target="_blank">
+                                <i class="fab fa-github fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="col social">
+                            <a href="https://www.instagram.com/justarunsthing" target="_blank">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                        </div>
+                        @*
+                            <div class="col social">
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-youtube fa-2x"></i>
+                                </a>
+                            </div>
+                        *@
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

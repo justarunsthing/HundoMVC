@@ -1,6 +1,38 @@
-html {
-  font-size: 14px;
+:root {
+    --primary-color: #1D5888;
+    --secondary-color: #36827F;
+    --dark-color: #292929;
+    --white-color: #E7E7E7;
 }
+
+.theme-color {
+    background-color: #464d77;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.sticky-footer {
+    position: sticky;
+}
+
+html {
+    font-size: 14px;
+}
+
+footer {
+    padding-right: 1rem;
+}
+
+    footer .social > a {
+        color: var(--white-color);
+        opacity: 0.75;
+    }
+
+        footer .social > a:hover {
+            opacity: 0.9;
+            color: var(--secondary-color);
+        }
 
 @media (min-width: 768px) {
   html {
@@ -18,7 +50,9 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
