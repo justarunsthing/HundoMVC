@@ -1,5 +1,5 @@
-using System.Diagnostics;
 using HundoMVC.Models;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HundoMVC.Controllers
@@ -9,6 +9,11 @@ namespace HundoMVC.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult App()
+        {
+            return View(); 
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
