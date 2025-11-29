@@ -16,6 +16,20 @@
     position: sticky;
 }
 
+.action {
+    background-color: var(--secondary-color);
+}
+
+    .action:hover {
+        background-color: #3b6d80;
+        border: 2px solid #464D77;
+        box-shadow: 0 0 10px rgba(70, 77, 119, 0.4);
+    }
+
+.devicons {
+    font-size: 4rem;
+}
+
 html {
     font-size: 14px;
 }
@@ -33,6 +47,14 @@ footer {
             opacity: 0.9;
             color: var(--secondary-color);
         }
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+}
+
+.checklist > li i {
+    color: #464d77;
+}
 
 @media (min-width: 768px) {
   html {
