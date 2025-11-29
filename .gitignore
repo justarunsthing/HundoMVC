@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/bin/Debug/net10.0
+/obj
+/HundoMVC.csproj.user
+/appsettings.Development.json
